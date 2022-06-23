@@ -1,25 +1,3 @@
-// import React from 'react'
-// import "../../assets/vendor/css/core.css";
-// import "../../assets/vendor/css/theme-default.css";
-// import "../../assets/css/demo.css"
-// // import Slide from  "./slide/slide"
-// // // import Navbar from './navbar/Navbar';
-// // import Cards from './card/cards';
-
-
-
-
-// function Dashnoard() {
-//   return (
-//     <div class="layout-wrapper layout-content-navbar">
-//       <div class="layout-container">
-//           Helo World
-//       </div>
-//     </div>  
-//   )
-// }
-
-// export default Dashnoard
 
 import React, { useState } from "react";
 import Cards from "./card/cards";
