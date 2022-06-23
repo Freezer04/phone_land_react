@@ -6,10 +6,10 @@ function Item ({handleDeleteObject}){
     const [Data , setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/users')
+        axios.get('http://localhost:3000/api/user')
         .then(res => {
             // console.log(res);
-            setData(res.data.livreur);
+            setData(res.data);
         }).catch (err => {
             console.log(err);
             
@@ -31,9 +31,7 @@ console.log(Data)
             </span>
           </td>
 
-          <td className="align-middle text-center text-sm">
-            <span className="text-xs font-weight-bold">{items.username}</span>
-          </td>
+         
           <td className="align-middle text-center">
             <span className="text-xs font-weight-bold">
               {items.email}
@@ -52,7 +50,6 @@ console.log(Data)
            to={`/UpdateRepas/${items._id}`}>
            <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</Link>
           </td>
-          
         </tr>
         )
       })}
