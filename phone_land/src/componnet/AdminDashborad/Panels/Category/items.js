@@ -43,7 +43,7 @@ function Item ({handleDeleteObject}){
           href="javascript:;"><i class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
           <Link class="btn btn-link text-dark px-3 mb-0"
          
-           to={`/UpdateRepas/${items._id}`}>
+           to={`/UpadteCategory/${items.category_id}`}>
            <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit</Link>
           </td>
           
