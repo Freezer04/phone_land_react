@@ -9,7 +9,7 @@ const List = ({title ,handleDeleteObject}) => {
       <div className="d-flex justify-content-between">
         <Header title ={title} />
         <Link className="my-2 btn btn-primary shadow-2 "
-          to={`/AddRepas`}>  Add Category 
+          to={`/Addcategory`}>  Add Category 
             </Link>
       </div>
       <div className="card-body px-0 pb-2">
