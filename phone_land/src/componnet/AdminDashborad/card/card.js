@@ -22,6 +22,12 @@ function Card({title,setPanel}) {
         </div>
       </div>
     </div>
+                  // <div class="card shadow-none bg-transparent border border-info mb-3">
+                  //   <div class="card-body mb-3" onClick={() => {setPanel(title)}} style={{cursor : 'pointer'}}>
+                  //     <h5 class="card-title">{title}</h5>
+                  //     <p class="card-text">Some quick example text to build on the card title and make up.</p>
+                  //   </div>
+                  // </div>
   )
 }
 
