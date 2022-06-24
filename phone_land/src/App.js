@@ -13,10 +13,10 @@ import {
 import Login from "./componnet/auth/login";
 import Register from "./componnet/auth/register";
 import Dashboard from "./componnet/AdminDashborad/Dashnoard"
-// import AddRepas from "./components/Admin_dashborad/Crud/Repas/Add";
-// import AddAnnonce from "./components/Admin_dashborad/Crud/Annonce/Add";
-// import UpdateAnnonce from "./components/Admin_dashborad/Crud/Annonce/Update"
-// import UpdateRepas from "./components/Admin_dashborad/Crud/Repas/Update"
+import AddBrand from "./componnet/AdminDashborad/Crud/brand/add";
+import AddCategory from "./componnet/AdminDashborad/Crud/category/add";
+import AddProduct from "./componnet/AdminDashborad/Crud/product/Add"
+import UpdateCategory from "./componnet/AdminDashborad/Crud/category/update"
 // import AddUser from "./components/Admin_dashborad/Crud/User/Add"
 import "../src/assets/vendor/fonts/boxicons.css"
 import '../src/assets/vendor/css/pages/page-auth.css';
@@ -37,6 +37,18 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashbord" element={<Dashboard />} />
+            <Route
+              path="Addbrand"
+              element= {<AddBrand/>}/> 
+              <Route
+              path="Addcategory"
+              element= {<AddCategory/>}/> 
+               <Route
+              path="AddProduct"
+              element= {<AddProduct/>}/> 
+               <Route
+              path="UpadteCategory/:categoryId"
+              element= {<UpdateCategory/>}/> 
           </Routes>
         </Router>
         </div>
