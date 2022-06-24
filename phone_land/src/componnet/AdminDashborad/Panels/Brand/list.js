@@ -10,7 +10,7 @@ const List = ({title ,handleDeleteObject}) => {
         <Header title ={title} />
        
         <Link className="my-2 btn btn-primary shadow-2 "
-          to={`/AddBrand`}>  Add Brand 
+          to={`/Addbrand`}>  Add Brand 
             </Link>
       </div>
       <div className="card-body px-0 pb-2">
