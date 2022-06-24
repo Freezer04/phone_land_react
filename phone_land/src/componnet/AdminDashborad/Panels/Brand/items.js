@@ -8,15 +8,15 @@ function Item ({handleDeleteObject}){
     useEffect(() => {
         axios.get('http://localhost:3000/api/brand')
         .then(res => {
-            // console.log(res.data);
+            console.log(res.data);
             setBrand(res.data);
         }).catch (err => {
             console.log(err);
             console.log('makin walo');
         }) 
-    })
+    },[])
 
-    
+    console.log(Brand);
   return (
     <>
       {Brand.map((items, index) => {
@@ -35,7 +35,7 @@ function Item ({handleDeleteObject}){
           <a class="btn btn-link text-danger text-gradient px-3 mb-0" 
           onClick={(e) => {
             e.preventDefault();
-            handleDeleteObject("annonce", items._id);
+            handleDeleteObject("brand", items._id);
           }}
            
           href="javascript:;"><i class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete</a>
