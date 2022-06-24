@@ -6,10 +6,10 @@ function Item ({handleDeleteObject}){
     const [Data , setData] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/users/product')
+        axios.get('http://localhost:3000/api/product')
         .then(res => {
-            // console.log(res);
-            setData(res.data.client);
+            console.log(res);
+            setData(res.data);
         }).catch (err => {
             console.log(err);
             
@@ -34,7 +34,6 @@ console.log(Data)
               {items.name}
             </span>
           </td>
-
           <td className="align-middle text-center text-sm">
             <span className="text-xs font-weight-bold">{items.description}</span>
           </td>
