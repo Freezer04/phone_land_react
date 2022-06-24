@@ -11,10 +11,10 @@ const Panel = ({ title }) => {
         <div className="row my-4">
           <div className="col-lg-8 col-md-6 mb-md-0 mb-4 mx-auto">
             <div class="card">
-              {title === "Poducts" && <ListProduct title ={title}  />}
-              {title === "Brand" && <ListBrand title ={title}  />}
-              {title === "Category" && <ListCatygory title ={title}  />}
-              {title === "Users" && <ListUsers title ={title}  />}
+              {title === "Product" && <ListProduct title ={title}/>}
+              {title === "Brand" && <ListBrand title ={title}/>}
+              {title === "Category" && <ListCatygory title ={title}/>}
+              {title === "Users" && <ListUsers title ={title} />}
             </div>
           </div>
         </div>
